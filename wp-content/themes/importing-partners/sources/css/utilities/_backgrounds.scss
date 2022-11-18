@@ -1,0 +1,19 @@
+.u-background {
+  @apply absolute inset-0 object-cover object-center w-full h-auto;
+
+  &--full {
+    @apply h-full;
+  }
+}
+
+.u-center {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer;
+
+  &--left {
+    @apply left-0 translate-x-0;
+  }
+}
+
+.u-iframe {
+  @apply absolute inset-0 w-full h-full;
+}

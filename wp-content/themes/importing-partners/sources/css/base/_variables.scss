@@ -1,0 +1,33 @@
+/* Variables */
+
+:root {
+  /* Font family */
+  --font-family-primary: LittleBearBlack, sans-serif;
+  --font-family-secondary: Muli, sans-serif;
+  --font-family-terciary: PatrickHand, sans-serif;
+  --font-family-openSans: OpenSans, sans-serif;
+  --font-family-CoveredByYourGrace: CoveredByYourGrace, sans-serif;
+  --font-material-icons: Material Icons;
+
+  /* Font sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 4rem;
+
+  /* Colors */
+  --color-primary-100: #88B8B4;
+  --color-primary-200: #DFECEB;
+  --color-primary-500: #2A666B;
+  --color-primary-600: #4B8991;
+  --color-primary-700: #2A666B;
+  --color-secondary-500: #F2EAB7;
+  --color-terciary-500: #BD3A53;
+  --color-terciary-700: #A31D3A;
+}

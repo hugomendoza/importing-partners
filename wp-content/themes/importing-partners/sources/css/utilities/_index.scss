@@ -1,0 +1,21 @@
+@import 'backgrounds';
+@import 'containers';
+
+// html {
+//   scroll-behavior: smooth;
+//   font-size: 13px;
+  
+//   @screen 2xl {
+//     font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1536 - 320)));
+//   }
+  
+//   @screen lg {
+//     font-size: 16px;
+//   }
+
+//   & body {
+//     font-kerning: auto;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//   }
+// }
