@@ -1,0 +1,4 @@
+.btn-primary {
+  min-width: 150px;
+  @apply bg-secondary text-primary text-xl text-center p-5 font-extrabold rounded-xl;
+}

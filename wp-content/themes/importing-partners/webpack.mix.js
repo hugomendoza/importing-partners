@@ -34,7 +34,11 @@ mix
   // BrowserSync
   .browserSync({
     proxy,
-    files: ['./*.{php, twig, html}', 'dist/**/*.{js,css}'],
+    files: [
+      './*.{php, twig, html}',
+      './partials/*.php',
+      'dist/**/*.{js,css}'
+    ],
   })
   // Run default output cleaning
   .clean()

@@ -1,0 +1,24 @@
+.nav {
+  @apply bg-primary;
+
+  &__container {
+    @apply max-w-screen-2xl px-4 py-10 m-auto flex items-center;
+  }
+
+  &__menu {
+    @apply flex items-center justify-end pr-8;
+
+    &--register {
+      @apply pr-0;
+      
+      .btn-primary {
+        @apply px-4 py-2 ml-4 text-lg;
+      }
+    }
+  }
+
+  &__link {
+    @apply text-white text-xl px-4;
+    @apply last:pr-0;
+  }
+}

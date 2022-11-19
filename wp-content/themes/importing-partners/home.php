@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="<?php echo $getLink ?>/dist/css/main.css">
 </head>
 <body>
+
+  <?php include "partials/nav.php" ?>
   
   <?php foreach($dataHome["components_landing"] as $component): ?>
     <?php switch($component["select_components"]) {
@@ -35,6 +37,6 @@
       <?php break; ?>
     <?php }; ?>
   <?php endforeach ?>
-
+  <script src="<?php echo $getLink?>/dist/js/main.bundle.js"></script>
 </body>
 </html>

@@ -11,6 +11,9 @@ module.exports = {
         primary: {
           DEFAULT: 'var(--color-primary-500)',
         },
+        secondary: {
+          DEFAULT: 'var(--color-secondary-500)',
+        },
       },
       fontFamily: {
         sans: ['var(--font-family-primary)', ...defaultTheme.fontFamily.sans],
