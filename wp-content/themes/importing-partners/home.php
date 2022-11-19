@@ -2,23 +2,11 @@
   /*
   Template Name: Home
  */
-  // $dataHome = get_fields();
-  // $postHome = get_posts();
+  $dataHome = get_fields();
 
-  // $args = array (
-  //   'posts_per_page' => 5, // How many items to display
-  // );
-
-  // $wpex_query = new wp_query( $args );
   // echo "<prev>";
-  // print_r ($postHome);
+  // print_r ($dataHome);
   // exit;
-
-  // $menuIDs = get_nav_menu_locations();
-  // $mainMenu = array();
-  // $idsTemporales = new stdClass();
-  // require get_template_directory().'/wc-api/config.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +19,22 @@
   <link rel="stylesheet" href="<?php echo $getLink ?>/dist/css/main.css">
 </head>
 <body>
-  <h1 class="w-6 text-6xl text-purple-400">Hola Mundo</h1>
+  
+  <?php foreach($dataHome["components_landing"] as $component): ?>
+    <?php switch($component["select_components"]) {
+      case "hero": ?>
+          <?php
+            $heroContent = $component["hero"]
+          ?>
+          <h1><?php echo $heroContent["title"] ?></h1>
+          <h1><?php echo $heroContent["description"] ?></h1>
+          <h1><?php echo $heroContent["link"]["url"] ?></h1>
+          <h1><?php //echo $heroContent["link"]["text"] ?></h1>
+      <?php break; case "section": ?>
+        <h1>jadfjsdfj</h1>
+      <?php break; ?>
+    <?php }; ?>
+  <?php endforeach ?>
+
 </body>
 </html>

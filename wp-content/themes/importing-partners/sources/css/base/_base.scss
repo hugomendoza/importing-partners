@@ -1,0 +1,24 @@
+html {
+  @apply font-sans scroll-smooth;
+  font-size: 19px;
+
+  @screen max-xl {
+    font-size: calc(14px + (19 - 14) * ((100vw - 576px) / (1400 - 576)));
+  }
+
+  @screen max-sm {
+    font-size: 14px;
+  }
+}
+
+body {
+  @apply antialiased;
+
+  * {
+    @apply box-border;
+  }
+}
+
+img {
+  @apply max-w-full;
+}
