@@ -1,4 +1,8 @@
 .btn-primary {
   min-width: 150px;
-  @apply bg-secondary text-primary text-xl text-center p-5 font-extrabold rounded-xl;
+  @apply bg-secondary text-primary text-xl text-center px-5 py-4 font-extrabold rounded-xl table transition-all duration-200 ease-in;
+
+  &--animated {
+    @apply hover:scale-105 origin-top-left;
+  }
 }

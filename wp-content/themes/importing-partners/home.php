@@ -20,20 +20,55 @@
 </head>
 <body>
 
+  <!-- Component Nav -->
   <?php include "partials/nav.php" ?>
+  <!-- Component Nav -->
   
   <?php foreach($dataHome["components_landing"] as $component): ?>
     <?php switch($component["select_components"]) {
       case "hero": ?>
-          <?php
-            $heroContent = $component["hero"]
-          ?>
-          <h1><?php echo $heroContent["title"] ?></h1>
-          <h1><?php echo $heroContent["description"] ?></h1>
-          <h1><?php echo $heroContent["link"]["url"] ?></h1>
-          <h1><?php //echo $heroContent["link"]["text"] ?></h1>
+        <!-- Component Hero -->
+        <?php
+          $heroContent = $component["hero"]
+        ?>
+        <main class="hero">
+          <picture>
+            <img
+              src=<?php echo $heroContent["background"]["url"]?>"
+              alt="<?php echo $heroContent["title"] ?>"
+              title="<?php echo $heroContent["title"] ?>"
+              loading="lazy"
+              width="1"
+              height="1"
+              class="hero__background"
+            >
+          </picture>
+          <div class="container relative">
+            <header
+              class="hero__header relative"
+              data-aos="fade-up"
+            >
+              <h1 class="hero__title">
+                <?php echo $heroContent["title"] ?>
+              </h1>
+              <p class="hero__description">
+                <?php echo $heroContent["description"] ?>
+              </p>
+              <a
+                href="<?php echo $heroContent["link"]["url"] ?>"
+                target="_blank"
+                class="btn-primary btn-primary--animated mt-8"
+              >
+                <?php echo $heroContent["link"]["title"] ?>
+              </a>
+            </header>
+          </div>
+        </main>
+        <!-- Component Hero -->
       <?php break; case "section": ?>
-        <h1>jadfjsdfj</h1>
+        <header>
+          <h2>jadfjsdfj</h2>
+        </header>
       <?php break; ?>
     <?php }; ?>
   <?php endforeach ?>
