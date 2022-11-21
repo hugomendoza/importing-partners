@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-family-primary)', ...defaultTheme.fontFamily.sans],
+        headline: ['var(--font-family-secondary)', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         xs: 'var(--text-xs)',
